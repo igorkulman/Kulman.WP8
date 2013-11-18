@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Kulman.WP8.Nuget</id>
+    <id>Kulman.WP8</id>
     <version>1.0.0</version>
     <title>Kulman.WP8</title>
     <authors>Igor Kulman</authors>
