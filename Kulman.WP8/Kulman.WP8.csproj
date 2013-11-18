@@ -91,7 +91,7 @@
     <Compile Include="Converters\LowerCaseConverter.cs" />
     <Compile Include="Converters\NullToVisibilityConverter.cs" />
     <Compile Include="Converters\UpperCaseConverter.cs" />
-    <Compile Include="Interfaces\ICryptograhpyService.cs" />
+    <Compile Include="Interfaces\ICryptographyService.cs" />
     <Compile Include="Interfaces\ISettingsService.cs" />
     <Compile Include="Interfaces\INetworkInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

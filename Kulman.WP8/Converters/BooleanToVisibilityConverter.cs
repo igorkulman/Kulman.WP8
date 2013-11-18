@@ -7,13 +7,13 @@ namespace Kulman.WP8.Converters
 {
     public class BooleanToVisibilityConverter : IValueConverter
     {
-        public bool IsReversed { get; set; }
+        public bool IsInverted { get; set; }
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var isVisible = (bool)value;
 
-            if (IsReversed)
+            if (IsInverted)
             {
                 return isVisible ? Visibility.Collapsed : Visibility.Visible;
             }

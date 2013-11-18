@@ -6,11 +6,11 @@ namespace Kulman.WP8.Converters
 {
     public class NullToVisibilityConverter : IValueConverter
     {
-        public bool IsReversed { get; set; }
+        public bool IsInverted { get; set; }
 
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            if (IsReversed)
+            if (IsInverted)
             {
                 return value == null ? Visibility.Visible : Visibility.Collapsed;
             }
