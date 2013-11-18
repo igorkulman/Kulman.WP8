@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Kulman.WP8</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Kulman.WP8</title>
     <authors>Igor Kulman</authors>
     <owners></owners>
@@ -18,7 +18,7 @@
     <projectUrl>https://github.com/igorkulman/Kulman.WP8</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <licenseUrl>https://raw.github.com/igorkulman/Kulman.WP8/master/LICENSE.txt</licenseUrl>
     <copyright>Copyright  2013</copyright>
     <dependencies>
     </dependencies>
