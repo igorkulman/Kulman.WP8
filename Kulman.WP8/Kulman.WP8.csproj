@@ -83,8 +83,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Code\DelegateCommand.cs" />
+    <Compile Include="Code\MD5CryptoServiceProvider.cs" />
+    <Compile Include="Code\SortedObservableCollection.cs" />
+    <Compile Include="Converters\BooleanNegateConverter.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\LowerCaseConverter.cs" />
+    <Compile Include="Converters\NullToVisibilityConverter.cs" />
+    <Compile Include="Converters\UpperCaseConverter.cs" />
+    <Compile Include="Interfaces\ICryptograhpyService.cs" />
     <Compile Include="Interfaces\ISettingsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CryprographyService.cs" />
+    <Compile Include="Services\StorageSettingsService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
