@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Kulman.WP8.Nuget</id>
+    <version>1.0.0</version>
+    <title>Kulman.WP8</title>
+    <authors>Igor Kulman</authors>
+    <owners></owners>
+    <description>
+      Collection of utilities for Windows Phone apps
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+      Collection of utilities for Windows Phone apps
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/igorkulman/Kulman.WP8</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>Copyright  2013</copyright>
+    <dependencies>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="..\Kulman.WP8\bin\Release\Kulman.WP8.dll" target="lib\wp8\Kulman.WP8.dll" />
+    <file src="..\Kulman.WP8\bin\Release\Kulman.WP8.pdb" target="lib\wp8\Kulman.WP8.pdb" />
+  </files>
+</package>

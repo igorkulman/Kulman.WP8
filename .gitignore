@@ -4,3 +4,7 @@
 /Kulman.WP8/*.user
 
 /*.suo
+
+/Kulman.WP8.Nuget/bin
+/Kulman.WP8.Nuget/obj
+/Kulman.WP8.Nuget/*.nupkg
