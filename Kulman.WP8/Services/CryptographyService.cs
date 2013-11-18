@@ -7,9 +7,9 @@ using Kulman.WP8.Interfaces;
 
 namespace Kulman.WP8.Services
 {
-    public class CryptographyService : ICryptograhpyService
+    public class CryptographyService : ICryptographyService
     {        
-        public string GetMd5String(string source)
+        public string GetMd5(string source)
         {
            return MD5.GetMD5(source);
         }
