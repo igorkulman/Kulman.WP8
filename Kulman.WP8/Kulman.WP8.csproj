@@ -95,7 +95,7 @@
     <Compile Include="Interfaces\ISettingsService.cs" />
     <Compile Include="Interfaces\INetworkInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\CryprographyService.cs" />
+    <Compile Include="Services\CryptographyService.cs" />
     <Compile Include="Services\NetworkInformationService.cs" />
     <Compile Include="Services\StorageSettingsService.cs" />
   </ItemGroup>
