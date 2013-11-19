@@ -63,6 +63,12 @@
     <Folder Include="lib\" />
     <Folder Include="src\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kulman.WP8\Kulman.WP8.csproj">
+      <Project>{a5161779-6f62-40ce-8fdf-d165873a388e}</Project>
+      <Name>Kulman.WP8</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
