@@ -4,6 +4,9 @@ using Microsoft.Phone.Info;
 
 namespace Kulman.WP8.Services
 {
+    /// <summary>
+    /// Device information service
+    /// </summary>
     public class DeviceInformationService : IDeviceInformationService
     {
         /// <summary>
