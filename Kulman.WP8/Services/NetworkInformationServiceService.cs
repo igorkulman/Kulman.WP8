@@ -3,7 +3,7 @@ using Microsoft.Phone.Net.NetworkInformation;
 
 namespace Kulman.WP8.Services
 {
-    public class NetworkInformationService: INetworkInformation
+    public class NetworkInformationServiceService: INetworkInformationService
     {
         public bool IsNetworkAvailable()
         {

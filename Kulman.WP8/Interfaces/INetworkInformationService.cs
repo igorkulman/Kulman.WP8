@@ -1,6 +1,6 @@
 ﻿namespace Kulman.WP8.Interfaces
 {
-    public interface INetworkInformation
+    public interface INetworkInformationService
     {
         bool IsNetworkAvailable();
         bool IsOnWiFi();
