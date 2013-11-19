@@ -3,6 +3,9 @@ using System.Windows.Data;
 
 namespace Kulman.WP8.Converters
 {
+    /// <summary>
+    /// Converts give string to lower case
+    /// </summary>
     public class LowerCaseConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

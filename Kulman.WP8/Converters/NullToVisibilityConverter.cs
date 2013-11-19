@@ -4,6 +4,10 @@ using System.Windows.Data;
 
 namespace Kulman.WP8.Converters
 {
+    /// <summary>
+    /// Converts null to Visibility.Collapsed
+    /// Can be inverted
+    /// </summary>
     public class NullToVisibilityConverter : IValueConverter
     {
         public bool IsInverted { get; set; }

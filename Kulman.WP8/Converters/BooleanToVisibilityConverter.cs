@@ -5,6 +5,10 @@ using System.Windows.Data;
 
 namespace Kulman.WP8.Converters
 {
+    /// <summary>
+    /// Converts true to Visibility.Collapsed
+    /// Can be inverted
+    /// </summary>
     public class BooleanToVisibilityConverter : IValueConverter
     {
         public bool IsInverted { get; set; }

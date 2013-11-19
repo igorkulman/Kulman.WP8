@@ -3,9 +3,11 @@ using System.Windows.Data;
 
 namespace Kulman.WP8.Converters
 {
+    /// <summary>
+    /// Negates a boolean value
+    /// </summary>
     public class BooleanNegateConverter : IValueConverter
     {
-
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
             if (value == null) return true;
