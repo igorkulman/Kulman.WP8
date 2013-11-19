@@ -1,4 +1,6 @@
-﻿namespace Kulman.WP8.Interfaces
+﻿using System.Net;
+
+namespace Kulman.WP8.Interfaces
 {
     /// <summary>
     /// Interface definition for network information service
@@ -22,5 +24,11 @@
         /// </summary>
         /// <returns>True if the device has Internet connection, false otherwise</returns>
         bool IsInternetAvailable();
+
+        /// <summary>
+        /// Gets the current IP address
+        /// </summary>
+        /// <returns>Current IP address</returns>
+        IPAddress GetCurrentIPAddress();
     }
 }
