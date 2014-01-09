@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO.IsolatedStorage;
 using Kulman.WP8.Interfaces;
 using Microsoft.Phone.Info;
 
@@ -49,6 +50,15 @@ namespace Kulman.WP8.Services
         public string GetDeviceUniqueId()
         {
             return (string)DeviceExtendedProperties.GetValue("DeviceUniqueId");
+        }
+
+        /// <summary>
+        /// Gets the free space available for the application
+        /// </summary>
+        /// <returns>Free space available</returns>
+        public long GetAvailableFreeSpace()
+        {
+            return IsolatedStorageFile.GetUserStoreForApplication().AvailableFreeSpace;
         }
     }
 }

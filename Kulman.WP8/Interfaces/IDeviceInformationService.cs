@@ -20,5 +20,11 @@
         /// </summary>
         /// <returns>Device unique id</returns>
         string GetDeviceUniqueId();
+
+        /// <summary>
+        /// Gets the free space available for the application
+        /// </summary>
+        /// <returns>Free space available</returns>
+        long GetAvailableFreeSpace();
     }
 }
