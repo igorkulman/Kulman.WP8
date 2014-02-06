@@ -83,6 +83,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Attributes\PerRequestAttribute.cs" />
+    <Compile Include="Attributes\SingletonAttribute.cs" />
     <Compile Include="Code\DelegateCommand.cs" />
     <Compile Include="Code\MD5CryptoServiceProvider.cs" />
     <Compile Include="Code\SortedObservableCollection.cs" />
