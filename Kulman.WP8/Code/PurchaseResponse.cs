@@ -1,4 +1,4 @@
-﻿namespace Inmite.Core.Win8.Services
+﻿namespace Kulman.WP8.Code
 {
     public enum PurchaseResult
     {
