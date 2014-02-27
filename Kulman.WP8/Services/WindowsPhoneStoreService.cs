@@ -52,37 +52,38 @@ namespace Kulman.WP8.Services
         /// Tries to purchase a product
         /// </summary>
         /// <param name="productId">Product id</param>
-        /// <returns>Response containing the buy result</returns>
-        public async Task<PurchaseResponse> Purchase(string productId)
+        /// <returns>True on success, false otherwise</returns>
+        public async Task<bool> Purchase(string productId)
         {
             if (String.IsNullOrEmpty(productId))
             {
-                return new PurchaseResponse
-                    {
-                        Result = PurchaseResult.Error
-                    };
+                return false;
             }
 
 
             try
             {
-                var receipt = await CurrentApp.RequestProductPurchaseAsync(productId, true);
+                await CurrentApp.RequestProductPurchaseAsync(productId, false);
 
-                CurrentApp.ReportProductFulfillment(productId);
-
-                return new PurchaseResponse
+                try
                 {
-                    Result = PurchaseResult.Ok,
-                    Receipt = receipt
-                };
+                    var licenses = CurrentApp.LicenseInformation.ProductLicenses;
+                    if (licenses["productId"].IsConsumable && licenses["productId"].IsActive)
+                    {
+                        CurrentApp.ReportProductFulfillment(productId);
+                    }
+                }
+                catch (Exception e)
+                {
+                    
+                }
+
+                return true;
 
             }
             catch (Exception ex)
             {
-                return new PurchaseResponse
-                    {
-                        Result = PurchaseResult.Error
-                    };
+                return false;
             }
         }
     }

@@ -87,7 +87,6 @@
     <Compile Include="Attributes\SingletonAttribute.cs" />
     <Compile Include="Code\DelegateCommand.cs" />
     <Compile Include="Code\MD5CryptoServiceProvider.cs" />
-    <Compile Include="Code\PurchaseResponse.cs" />
     <Compile Include="Code\SortedObservableCollection.cs" />
     <Compile Include="Converters\BooleanNegateConverter.cs" />
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
