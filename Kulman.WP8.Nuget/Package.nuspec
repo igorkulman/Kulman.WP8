@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Kulman.WP8</id>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <title>Kulman.WP8</title>
     <authors>Igor Kulman</authors>
     <owners></owners>
@@ -16,7 +16,7 @@
     </summary>
     <language>en-US</language>
     <projectUrl>https://github.com/igorkulman/Kulman.WP8</projectUrl>
-    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <iconUrl>https://dl.dropboxusercontent.com/u/73642/Nuget.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.github.com/igorkulman/Kulman.WP8/master/LICENSE.txt</licenseUrl>
     <copyright>Copyright  2013 - 2014</copyright>
