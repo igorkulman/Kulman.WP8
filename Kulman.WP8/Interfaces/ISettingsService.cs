@@ -19,5 +19,10 @@
         /// <param name="key">Key</param>
         /// <param name="value">Value</param>
         void Set(string key, object value);
+
+        /// <summary>
+        /// Clears all settings
+        /// </summary>
+        void ClearAll();
     }
 }

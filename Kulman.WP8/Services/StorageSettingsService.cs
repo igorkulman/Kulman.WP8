@@ -55,6 +55,18 @@ namespace Kulman.WP8.Services
                 AppSettings.Add(SafeString(key), (value is string) ? SafeString((string)value) : value);
                 AppSettings.Save();
             }
-        }            
+        }
+
+        /// <summary>
+        /// Clears all settings
+        /// </summary>
+        public void ClearAll()
+        {
+            lock (StorageSettingsService.SyncLock)
+            {
+                AppSettings.Clear();
+                AppSettings.Save();
+            }
+        }
     }
 }
