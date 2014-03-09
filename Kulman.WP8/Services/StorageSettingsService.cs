@@ -29,9 +29,16 @@ namespace Kulman.WP8.Services
         /// <returns>Value</returns>
         public object Get(string key)
         {
-            lock (StorageSettingsService.SyncLock)
+            lock (SyncLock)
             {
-                return AppSettings.Contains(SafeString(key)) ? AppSettings[SafeString(key)] : null;
+                try
+                {
+                    return AppSettings.Contains(SafeString(key)) ? AppSettings[SafeString(key)] : null;
+                }
+                catch
+                {
+                    return null;
+                }
             }
         }
 
@@ -43,7 +50,7 @@ namespace Kulman.WP8.Services
         /// <param name="value">Value</param>
         public void Set(string key, object value)
         {
-            lock (StorageSettingsService.SyncLock)
+            lock (SyncLock)
             {
                 if (AppSettings.Contains(SafeString(key)))
                 {
@@ -62,10 +69,16 @@ namespace Kulman.WP8.Services
         /// </summary>
         public void ClearAll()
         {
-            lock (StorageSettingsService.SyncLock)
+            lock (SyncLock)
             {
-                AppSettings.Clear();
-                AppSettings.Save();
+                try
+                {
+                    AppSettings.Clear();
+                    AppSettings.Save();
+                }
+                catch
+                {
+                }
             }
         }
     }
