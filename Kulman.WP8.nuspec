@@ -26,7 +26,7 @@
     <tags></tags>
   </metadata>
   <files>
-    <file src="..\Kulman.WP8\bin\Release\Kulman.WP8.dll" target="lib\wp8\Kulman.WP8.dll" />
-    <file src="..\Kulman.WP8\bin\Release\Kulman.WP8.pdb" target="lib\wp8\Kulman.WP8.pdb" />
+    <file src="Kulman.WP8.dll" target="lib\wp8\Kulman.WP8.dll" />
+    <file src="Kulman.WP8.pdb" target="lib\wp8\Kulman.WP8.pdb" />
   </files>
 </package>

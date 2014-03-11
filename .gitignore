@@ -12,3 +12,7 @@
 /Kulman.WP8.Nuget/*.bak
 
 /Kulman.WP8.Nuget/NuGet.log
+/tools/FAKE
+/packaging
+/test
+/build
