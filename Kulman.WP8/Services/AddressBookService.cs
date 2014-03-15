@@ -37,6 +37,13 @@ namespace Kulman.WP8.Services
             return t.Task;
         }
 
+        /// <summary>
+        /// Gets a list of contacts in device address book filtered by search criteria
+        /// </summary>
+        /// <param name="searchTerm">Search term</param>
+        /// <param name="callback">Callback</param>
+        /// <param name="filter">Filter</param>
+        /// <returns>List of contact</returns>
         private void SearchContacts(Action<List<Contact>> callback, FilterKind filter = FilterKind.None, string searchTerm = null)
         {
             var cons = new Contacts();
