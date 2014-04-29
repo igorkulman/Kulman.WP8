@@ -36,5 +36,21 @@ namespace Kulman.WP8.Tests
             Assert.AreEqual(Visibility.Collapsed, (Visibility)converter.Convert(true, typeof(bool), null, CultureInfo.CurrentCulture));
             Assert.AreEqual(Visibility.Visible, (Visibility)converter.Convert(false, typeof(bool), null, CultureInfo.CurrentCulture));
         }
+
+        [TestMethod]
+        public void LowerCaseConverterShouldWork()
+        {
+            var s = "hsDkjdsa8dask";
+            var converter = new LowerCaseConverter();
+            Assert.AreEqual(s.ToLower(), (string)converter.Convert(s, typeof(bool), null, CultureInfo.CurrentCulture));            
+        }
+
+        [TestMethod]
+        public void UpperCaseConverterShouldWork()
+        {
+            var s = "hsDkjdsa8dask";
+            var converter = new UpperCaseConverter();
+            Assert.AreEqual(s.ToUpper(), (string)converter.Convert(s, typeof(bool), null, CultureInfo.CurrentCulture));
+        }
     }
 }

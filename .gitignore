@@ -18,3 +18,4 @@
 /build
 /Kulman.WP8.Tests/obj
 /Kulman.WP8.Tests/Bin
+/Kulman.WP8.Tests/*.user
