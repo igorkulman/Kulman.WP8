@@ -1,25 +1,19 @@
 ﻿using System;
 using System.Windows.Data;
+using Kulman.WP8.Converters.Abstract;
 
 namespace Kulman.WP8.Converters
 {
     /// <summary>
     /// Converts give string to lower case
     /// </summary>
-    public class LowerCaseConverter : IValueConverter
+    public class LowerCaseConverter: BaseConverter<string,string>
     {
-        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        public override string Convert(string value)
         {
-            if (value == null) return null;
-            var s = (string)value;
+            if (String.IsNullOrEmpty(value)) return null;
 
-            return s.ToLower();
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter,
-                                  System.Globalization.CultureInfo culture)
-        {
-            throw new NotImplementedException();
+            return value.ToLower();
         }
     }
 }

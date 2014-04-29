@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Data;
+using Kulman.WP8.Converters.Abstract;
 
 namespace Kulman.WP8.Converters
 {
@@ -8,22 +9,13 @@ namespace Kulman.WP8.Converters
     /// Converts null to Visibility.Collapsed
     /// Can be inverted
     /// </summary>
-    public class NullToVisibilityConverter : IValueConverter
+    public class NullToVisibilityConverter : BaseVisibilityConverter<object>
     {
         public bool IsInverted { get; set; }
 
-        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        protected override bool? ConvertToVisibility(object value)
         {
-            if (IsInverted)
-            {
-                return value == null ? Visibility.Visible : Visibility.Collapsed;
-            }
-            return value == null ? Visibility.Collapsed : Visibility.Visible;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            throw new NotImplementedException();
+            return IsInverted ? value == null : value != null;
         }
     }
 }

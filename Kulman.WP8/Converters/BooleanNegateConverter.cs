@@ -1,23 +1,18 @@
 ﻿using System;
 using System.Windows.Data;
+using Kulman.WP8.Converters.Abstract;
 
 namespace Kulman.WP8.Converters
 {
     /// <summary>
     /// Negates a boolean value
     /// </summary>
-    public class BooleanNegateConverter : IValueConverter
+    public class BooleanNegateConverter : BaseConverter<bool?,bool?>
     {
-        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        public override bool? Convert(bool? value)
         {
             if (value == null) return true;
-            bool val = (bool)value;
-            return !val;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            throw new NotImplementedException();
+            return !value.Value;
         }
     }
 }
