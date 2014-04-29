@@ -73,6 +73,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CryptographyServiceTests.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="ConvertersTests.cs" />
     <Compile Include="MainPage.xaml.cs">
