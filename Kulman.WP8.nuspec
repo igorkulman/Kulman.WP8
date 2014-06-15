@@ -2,17 +2,17 @@
 <package >
   <metadata>
     <id>Kulman.WP8</id>
-    <version>1.0.10</version>
+    <version>1.0.12</version>
     <title>Kulman.WP8</title>
     <authors>Igor Kulman</authors>
     <owners></owners>
     <description>
-      Collection of utilities for Windows Phone apps
+      Collection of utilities for Windows Phone 8 and Windows Phone 8.1 Silverlight apps
     </description>
     <releaseNotes>
     </releaseNotes>
     <summary>
-      Collection of utilities for Windows Phone apps
+      Collection of utilities for Windows Phone 8 and Windows Phone 8.1 Silverlight apps
     </summary>
     <language>en-US</language>
     <projectUrl>https://github.com/igorkulman/Kulman.WP8</projectUrl>
