@@ -85,9 +85,13 @@
   <ItemGroup>
     <Compile Include="Attributes\PerRequestAttribute.cs" />
     <Compile Include="Attributes\SingletonAttribute.cs" />
+    <Compile Include="Code\BindingUtility.cs" />
     <Compile Include="Code\DelegateCommand.cs" />
+    <Compile Include="Code\LinqToVisualTree.cs" />
     <Compile Include="Code\ManifestHelper.cs" />
     <Compile Include="Code\MD5CryptoServiceProvider.cs" />
+    <Compile Include="Code\MetroInMotion.cs" />
+    <Compile Include="Code\ResolutionHelper.cs" />
     <Compile Include="Code\SortedObservableCollection.cs" />
     <Compile Include="Converters\Abstract\BaseConverter.cs" />
     <Compile Include="Converters\Abstract\BaseVisibilityConverter.cs" />
