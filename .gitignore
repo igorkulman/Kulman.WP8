@@ -20,3 +20,4 @@
 /Kulman.WP8.Tests/Bin
 /Kulman.WP8.Tests/*.user
 /*.user
+/packages
