@@ -10,7 +10,7 @@ namespace Kulman.WP8.Converters
 {
     public class ObjectToVisibilityConverter : BaseVisibilityConverter<object>
     {
-        protected override bool ConvertToVisibility(object value)
+        protected override bool? ConvertToVisibility(object value)
         {
             if (value is string)
             {
