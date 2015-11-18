@@ -24,6 +24,7 @@ namespace Kulman.WP8.Tests
             var converter = new BooleanToVisibilityConverter();
             Assert.AreEqual(Visibility.Visible, (Visibility)converter.Convert(true, typeof(bool), null, CultureInfo.CurrentCulture));
             Assert.AreEqual(Visibility.Collapsed, (Visibility)converter.Convert(false, typeof(bool), null, CultureInfo.CurrentCulture));
+            Assert.AreEqual(Visibility.Collapsed, (Visibility)converter.Convert(null, typeof(bool), null, CultureInfo.CurrentCulture));
         }
 
         [TestMethod]
