@@ -38,6 +38,11 @@ namespace Kulman.WP8.Converters.Abstract
                 return Convert((TFrom)value);
             }
 
+            if (typeof (TFrom).IsValueType)
+            {
+                return Convert(default(TFrom));
+            }
+
             return null;
         }
 
