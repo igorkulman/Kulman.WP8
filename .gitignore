@@ -21,3 +21,5 @@
 /Kulman.WP8.Tests/*.user
 /*.user
 /packages
+/.fake
+/.vs/Kulman.WP8/v14/*.suo
