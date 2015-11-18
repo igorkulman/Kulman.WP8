@@ -11,7 +11,7 @@ namespace Kulman.WP8.Converters
     {
         public bool IsInverted { get; set; }
 
-        protected override bool? ConvertToVisibility(int value)
+        protected override bool ConvertToVisibility(int value)
         {
             return (IsInverted) ? value==0 : value > 0;
         }
